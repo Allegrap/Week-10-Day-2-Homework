@@ -38,6 +38,7 @@ describe("Enclosure", function(){
   it("should get dinosaurs with offspring more than 2", function(){
     this.enclosure.addDinosaur(this.dinosaur2);
     this.enclosure.addDinosaur(this.dinosaur);
+    assert.equal(1, this.enclosure.getMoreThanTwoOffspring());
   })
 
 })
