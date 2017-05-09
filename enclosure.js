@@ -11,15 +11,13 @@ Enclosure.prototype = {
     this.dinosaurs = [];
   },
   removeDinosaur: function (type) {
-    var newArray = [];
-    for (var dinosaur of this.dinosaurs) {
-      if (dinosaur.type !== type) {
-        newArray.push(dinosaur);      }
+
+    for(var index = this.dinosaurs.length - 1; index>=0; index--) {
+      if (this.dinosaurs[index].type === type) {
+        this.dinosaurs.splice(index, 1);
+      }
     }
-
-    this.dinosaurs = newArray;
   }
-
 }
 
 module.exports = Enclosure;

@@ -6,7 +6,7 @@ describe("Enclosure", function(){
 
   beforeEach(function(){
     this.enclosure = new Enclosure("Big one");
-    this.dinosaur = new Dinosaur("Diplodocus", 2);
+    this.dinosaur = new Dinosaur("Diplodocus", 1);
     this.dinosaur2 = new Dinosaur("Pig", 7);
   })
 
@@ -33,6 +33,11 @@ describe("Enclosure", function(){
     this.enclosure.addDinosaur(this.dinosaur2);
     this.enclosure.removeDinosaur("Pig");
     assert.equal(0, this.enclosure.dinosaurs.length);
+  })
+
+  it("should get dinosaurs with offspring more than 2", function(){
+    this.enclosure.addDinosaur(this.dinosaur2);
+    this.enclosure.addDinosaur(this.dinosaur);
   })
 
 })
