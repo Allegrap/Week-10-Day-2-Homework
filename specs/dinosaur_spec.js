@@ -3,6 +3,8 @@ var Dinosaur = require("../dinosaur.js");
 
 describe("Dinosaur", function(){
 
-
+  beforeEach(function(){
+    this.dinosaur = new Dinosaur("Diplodocus", 2);
+  })
 
 }
