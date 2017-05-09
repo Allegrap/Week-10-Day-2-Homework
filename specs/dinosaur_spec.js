@@ -11,4 +11,8 @@ describe("Dinosaur", function(){
     assert.equal("Diplodocus", this.dinosaur.type);
   })
 
+  it("should have number of offspring", function(){
+    assert.equal(2, this.dinosaur.offspringPerYear);
+  })
+
 })
