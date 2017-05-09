@@ -8,6 +8,10 @@ describe("Enclosure", function(){
     this.enclosure = new Enclosure("Big one");
   })
 
+  it("should have name", function(){
+    assert.equal("Big one", this.enclosure.name);
+  }
+  })
 
 
 })
