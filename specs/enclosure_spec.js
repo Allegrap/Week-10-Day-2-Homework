@@ -10,7 +10,6 @@ describe("Enclosure", function(){
 
   it("should have name", function(){
     assert.equal("Big one", this.enclosure.name);
-  }
   })
 
 
