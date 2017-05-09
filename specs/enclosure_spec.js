@@ -30,6 +30,7 @@ describe("Enclosure", function(){
 
   it("should remove animal from enclosure", function(){
     this.enclosure.addDinosaur(this.dinosaur2);
+    this.enclosure.addDinosaur(this.dinosaur2);
     this.enclosure.removeDinosaur("Pig");
     assert.equal(0, this.enclosure.dinosaurs.length);
   })
