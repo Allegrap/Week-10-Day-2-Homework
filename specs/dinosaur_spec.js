@@ -7,4 +7,8 @@ describe("Dinosaur", function(){
     this.dinosaur = new Dinosaur("Diplodocus", 2);
   })
 
-}
+  it("should have type", function(){
+    assert.equal("Diplodocus", this.dinosaur.type);
+  })
+
+})
