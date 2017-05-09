@@ -12,5 +12,9 @@ describe("Enclosure", function(){
     assert.equal("Big one", this.enclosure.name);
   })
 
+  it("should start empty", function(){
+    assert.equal(0, this.enclosure.dinosaurs.length);
+  })
+
 
 })

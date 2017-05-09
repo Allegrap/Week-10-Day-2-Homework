@@ -1,6 +1,6 @@
 var Enclosure = function(name){
   this.name = name;
-  this.enclosures = [];
+  this.dinosaurs = [];
 }
 
 module.exports = Enclosure;
