@@ -6,8 +6,10 @@ var Enclosure = function(name){
 Enclosure.prototype = {
   addDinosaur: function(dinosaur){
     this.dinosaurs.push(dinosaur);
+  },
+  clear: function(){
+    this.dinosaurs = [];
   }
-
 
 }
 
