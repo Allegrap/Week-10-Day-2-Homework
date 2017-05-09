@@ -22,4 +22,9 @@ describe("Enclosure", function(){
     assert.equal(1, this.enclosure.dinosaurs.length);
   })
 
+  it("should clear all dinosaurs", function(){
+    this.enclosure.clear;
+    assert.equal(0, this.enclosure.dinosaurs.length);
+  })
+
 })
